@@ -27,9 +27,11 @@ You can use either Maven or Gradle to run the tests in this project.
 ./gradlew clean test
 ```
 
-## Generating Allure Report
+## Allure Report
 
-**Generate Report With Maven:**
+The final Allure report is located in [gh-pages](https://github.com/karltiirik/spock-restassured-allure/tree/gh-pages) branch and is available in a browser here: [https://karltiirik.github.io/spock-restassured-allure](https://karltiirik.github.io/spock-restassured-allure).
+
+**Generate Local Report With Maven:**
 
 Note: On Windows, running this command may cause the report serving processes to leak. For more details, check [this issue](https://github.com/allure-framework/allure-java/issues/836).
 
@@ -37,7 +39,7 @@ Note: On Windows, running this command may cause the report serving processes to
 ./mvnw allure:serve
 ```
 
-**Generate Report With Gradle:**
+**Generate Local Report With Gradle:**
 
 ```shell
 ./gradlew allureServe
