@@ -14,22 +14,23 @@ Template framework for API and UI automated testing. It already contains all the
 # Prerequisites
 
 1. This project is using Java 17, so make sure to use correct Java version both locally an in IDE.
-   1.1. Setup Java version in Intellij IDEA: File -> Project Structure... -> Project Settings -> Project -> SDK -> choose 17.
-2. Choose one of the build tools that you want to use and delete the other one. It doesn't affect the functionality, but it's just more clean and reliable approach to leave only functionality that is used in the project.  
-    2.1. If you want to use Maven, then delete Gradle files and mentions:
-        2.1.1. `gradle/wrapper`
-        2.1.2. `build.gradle.kts`
-        2.1.3. `gradlew`
-        2.1.4. `gradlew.bat`
-        2.1.5. `settings.gradle.kts`
-        2.1.6. "Run Tests With Gradle" and "Generate Local Report With Gradle" sections in `README.md`
-        2.1.7. "# Gradle" rows in `.gitignore`
-    2.2. If you choose to use Gradle, then delete all Maven mentions:
-        2.2.1. `.mvn/wrapper`
-        2.2.2. `mvnw`
-        2.2.3. `mvnw.cmd`
-        2.2.4. "Run Tests With Maven" and "Generate Local Report With Maven" sections in `README.md`
-        2.2.5. "# Maven" rows in `.gitignore`
+   - Setup Java version in Intellij IDEA: File -> Project Structure... -> Project Settings -> Project -> SDK -> choose 17.
+   
+3. Choose one of the build tools that you want to use and delete the other one. It doesn't affect the functionality, but it's just more clean and reliable approach to leave only functionality that is used in the project.  
+    - If you want to use Maven, then delete Gradle files and mentions:
+        - delete `gradle/wrapper`
+        - delete `build.gradle.kts`
+        - delete `gradlew`
+        - delete `gradlew.bat`
+        - delete `settings.gradle.kts`
+        - delete "Run Tests With Gradle" and "Generate Local Report With Gradle" sections in `README.md`
+        - delete "# Gradle" rows in `.gitignore`
+    - If you choose to use Gradle, then delete all Maven mentions:
+        - delete `.mvn/wrapper`
+        - delete `mvnw`
+        - delete `mvnw.cmd`
+        - delete "Run Tests With Maven" and "Generate Local Report With Maven" sections in `README.md`
+        - delete "# Maven" rows in `.gitignore`
 
 # Running Tests
 
