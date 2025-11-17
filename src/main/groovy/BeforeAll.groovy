@@ -19,7 +19,7 @@ class BeforeAll {
         // Set browser size
         Configuration.browserSize = "1920x1080"
         // Run browser headless
-        Configuration.headless = true
+        Configuration.headless = false
         // Set timeout to 10 sec
         Configuration.timeout = 10000
     }
