@@ -39,7 +39,7 @@ jobs:
         run: ./gradlew clean test
 
       - name: Generate test report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v3
         if: success() || failure()
         with:
           name: gradle-test-results
@@ -72,7 +72,7 @@ jobs:
         run: ./mvnw clean test
 
       - name: Generate test report
-        uses: dorny/test-reporter@v1
+        uses: dorny/test-reporter@v3
         if: success() || failure()
         with:
           name: maven-test-results
