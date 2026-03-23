@@ -4,6 +4,7 @@
 ![Java 25](https://img.shields.io/badge/Java-25-orange)
 ![Groovy](https://img.shields.io/badge/Groovy-4.x-blue)
 ![Spock](https://img.shields.io/badge/Spock-2.3-green)
+[![IntelliJ IDEA](https://img.shields.io/badge/IntelliJ%20IDEA-compatible-purple)](https://www.jetbrains.com/idea/)
 [![Claude](https://img.shields.io/badge/Claude-compatible-D97706?logo=claude)](CLAUDE.md)
 
 Template framework for API and UI automated testing. It already contains all the necessary dependencies, so you can start using this stack right away.
