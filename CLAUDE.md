@@ -39,7 +39,7 @@ src/test/groovy/
   UsersTest.groovy       # API tests for /users endpoints
   PostsTest.groovy       # API tests for /posts endpoints
   E2ETest.groovy         # UI tests using Selenide
-  resources/allure.properties  # Allure link patterns
+  src/test/resources/allure.properties  # Allure link patterns
 ```
 
 ## Code Style
@@ -50,7 +50,7 @@ All code must follow the project's code style defined in `.idea/codeStyles/` and
 - Max line length: 120 characters
 - Braces: always required
 - Trailing whitespace: trimmed
-- Final newline: required
+- Final newline: not inserted (per .editorconfig)
 
 ## Code Conventions
 
