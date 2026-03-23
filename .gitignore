@@ -23,3 +23,6 @@ out/
 
 # Allure
 .allure/
+
+# Claude Code
+*.local.*

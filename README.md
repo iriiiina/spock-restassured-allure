@@ -1,8 +1,14 @@
 # Spock+RestAssured+Allure
 
+[![Tests](https://github.com/iriiiina/spock-restassured-allure/actions/workflows/run-tests.yml/badge.svg)](https://github.com/iriiiina/spock-restassured-allure/actions/workflows/run-tests.yml)
+![Java 17](https://img.shields.io/badge/Java-17-orange)
+![Groovy](https://img.shields.io/badge/Groovy-4.x-blue)
+![Spock](https://img.shields.io/badge/Spock-2.3-green)
+[![Claude](https://img.shields.io/badge/Claude-compatible-D97706?logo=claude)](CLAUDE.md)
+
 Template framework for API and UI automated testing. It already contains all the necessary dependencies, so you can start using this stack right away.
 
-# Technical Stack
+## Technical Stack
 
 * Language: [Groovy](https://groovy-lang.org/)
 * Testing Framework: [Spock](https://spockframework.org/)
@@ -11,12 +17,12 @@ Template framework for API and UI automated testing. It already contains all the
 * Report: [Allure](https://allurereport.org/)
 * Build Tool: [Maven](https://maven.apache.org/) or [Gradle](https://gradle.org/)
 
-# Prerequisites
+## Prerequisites
 
-1. This project is using Java 17, so make sure to use correct Java version both locally an in IDE.
+1. This project is using Java 17, so make sure to use correct Java version both locally and in IDE.
    - Setup Java version in Intellij IDEA: File -> Project Structure... -> Project Settings -> Project -> SDK -> choose 17.
-   
-3. Choose one of the build tools that you want to use and delete the other one. It doesn't affect the functionality, but it's just more clean and reliable approach to leave only functionality that is used in the project.  
+
+2. Choose one of the build tools that you want to use and delete the other one. It doesn't affect the functionality, but it's just more clean and reliable approach to leave only functionality that is used in the project.
     - If you want to use Maven, then delete Gradle files and mentions:
         - delete `gradle/wrapper`
         - delete `build.gradle.kts`
@@ -32,25 +38,25 @@ Template framework for API and UI automated testing. It already contains all the
         - delete "Run Tests With Maven" and "Generate Local Report With Maven" sections in `README.md`
         - delete "# Maven" rows in `.gitignore`
 
-# Running Tests
+## Running Tests
 
 You can use either Maven or Gradle to run the tests in this project.
 
-## Run Tests With Maven
+### Run Tests With Maven
 
 ```shell
 ./mvnw clean test
 ```
 
-## Run Tests With Gradle
+### Run Tests With Gradle
 
 ```shell
 ./gradlew clean test
 ```
 
-# Allure Report
+## Allure Report
 
-## Generate Local Report With Maven
+### Generate Local Report With Maven
 
 Note: On Windows, running this command may cause the report serving processes to leak. For more details, check [this issue](https://github.com/allure-framework/allure-java/issues/836).
 
@@ -58,8 +64,27 @@ Note: On Windows, running this command may cause the report serving processes to
 ./mvnw allure:serve
 ```
 
-## Generate Local Report With Gradle
+### Generate Local Report With Gradle
 
 ```shell
 ./gradlew allureServe
 ```
+
+## Project Structure
+
+```
+src/main/groovy/
+  BeforeAll.groovy       # Global setup: RestAssured filters, Selenide config
+  Spec.groovy            # Abstract base class for all tests
+  Steps.groovy           # Reusable API step methods with @Step annotations
+  Requirement.groovy     # Custom annotation combining @Story + @TmsLink
+
+src/test/groovy/
+  UsersTest.groovy       # API tests for /users endpoints
+  PostsTest.groovy       # API tests for /posts endpoints
+  E2ETest.groovy         # End-to-end UI tests using Selenide
+```
+
+## Claude Code Readiness
+
+This project includes a `CLAUDE.md` file with project context for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Claude-specific local configuration files are excluded from version control via `.gitignore`.
