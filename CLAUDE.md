@@ -7,12 +7,12 @@ Tests run against JSONPlaceholder API (`https://jsonplaceholder.typicode.com`).
 
 ## Tech Stack
 
-- **Language**: Groovy 4.x on Java 17
+- **Language**: Groovy 4.x on Java 25
 - **Test Framework**: Spock 2.3
 - **API Testing**: RestAssured 5.x
-- **UI Testing**: Selenide 6.19
-- **Reporting**: Allure 2.24
-- **Build**: Both Gradle (8.10.2) and Maven (3.9.3) via wrappers
+- **UI Testing**: Selenide 7.14
+- **Reporting**: Allure 2.33
+- **Build**: Both Gradle (9.4.1) and Maven (3.9.3) via wrappers
 
 ## Build & Test Commands
 
@@ -55,7 +55,7 @@ src/test/groovy/
 
 ## CI
 
-GitHub Actions (`.github/workflows/run-tests.yml`): runs on PRs to `master`, parallel Gradle + Maven jobs, JDK 17 Temurin + Chrome, reports via `dorny/test-reporter`.
+GitHub Actions (`.github/workflows/run-tests.yml`): runs on PRs to `master`, parallel Gradle + Maven jobs, JDK 25 Temurin + Chrome, reports via `dorny/test-reporter`.
 
 ## Key Patterns
 

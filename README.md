@@ -1,7 +1,7 @@
 # Spock+RestAssured+Allure
 
 [![Tests](https://github.com/iriiiina/spock-restassured-allure/actions/workflows/run-tests.yml/badge.svg)](https://github.com/iriiiina/spock-restassured-allure/actions/workflows/run-tests.yml)
-![Java 17](https://img.shields.io/badge/Java-17-orange)
+![Java 25](https://img.shields.io/badge/Java-25-orange)
 ![Groovy](https://img.shields.io/badge/Groovy-4.x-blue)
 ![Spock](https://img.shields.io/badge/Spock-2.3-green)
 [![Claude](https://img.shields.io/badge/Claude-compatible-D97706?logo=claude)](CLAUDE.md)
@@ -19,8 +19,8 @@ Template framework for API and UI automated testing. It already contains all the
 
 ## Prerequisites
 
-1. This project is using Java 17, so make sure to use correct Java version both locally and in IDE.
-   - Setup Java version in Intellij IDEA: File -> Project Structure... -> Project Settings -> Project -> SDK -> choose 17.
+1. This project is using Java 25, so make sure to use correct Java version both locally and in IDE.
+   - Setup Java version in Intellij IDEA: File -> Project Structure... -> Project Settings -> Project -> SDK -> choose 25.
 
 2. Choose one of the build tools that you want to use and delete the other one. It doesn't affect the functionality, but it's just more clean and reliable approach to leave only functionality that is used in the project.
     - If you want to use Maven, then delete Gradle files and mentions:
