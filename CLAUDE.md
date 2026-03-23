@@ -42,6 +42,16 @@ src/test/groovy/
   resources/allure.properties  # Allure link patterns
 ```
 
+## Code Style
+
+All code must follow the project's code style defined in `.idea/codeStyles/` and `.editorconfig`, based on [spock-ij-code-style](https://github.com/iriiiina/spock-ij-code-style). Key rules:
+- Indentation: tabs (size 2)
+- Continuation indent: 4 spaces
+- Max line length: 120 characters
+- Braces: always required
+- Trailing whitespace: trimmed
+- Final newline: required
+
 ## Code Conventions
 
 - All test classes extend `Spec` and use `*Test` suffix
@@ -51,7 +61,6 @@ src/test/groovy/
 - Allure annotations: `@Epic`, `@Feature`, `@Story`, `@Step`, `@Issue`, `@Link`
 - Step methods live in `Steps.groovy` as static methods
 - Groovy idioms: implicit returns, string interpolation, closure syntax
-- Formatting: 4-space indent, LF line endings, 120 char max line length (see .editorconfig)
 
 ## CI
 

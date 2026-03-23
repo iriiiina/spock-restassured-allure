@@ -85,6 +85,10 @@ src/test/groovy/
   E2ETest.groovy         # End-to-end UI tests using Selenide
 ```
 
+## Code Style
+
+This project uses a shared IntelliJ IDEA code style from [spock-ij-code-style](https://github.com/iriiiina/spock-ij-code-style). The configuration is stored in `.idea/codeStyles/` and `.editorconfig`. IntelliJ IDEA will pick it up automatically.
+
 ## Claude Code Readiness
 
 This project includes a `CLAUDE.md` file with project context for [Claude Code](https://docs.anthropic.com/en/docs/claude-code). Claude-specific local configuration files are excluded from version control via `.gitignore`.
